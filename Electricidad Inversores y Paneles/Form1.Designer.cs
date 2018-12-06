@@ -28,13 +28,122 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.transformadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.calculoDePotenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.calculoDeBobinaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bateriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cargaDeBateriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.opcionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.calculoDeTransformadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.transformadorToolStripMenuItem,
+            this.bateriaToolStripMenuItem,
+            this.opcionesToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(878, 24);
+            this.menuStrip1.TabIndex = 1;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // transformadorToolStripMenuItem
+            // 
+            this.transformadorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.calculoDePotenciaToolStripMenuItem,
+            this.calculoDeBobinaToolStripMenuItem,
+            this.calculoDeTransformadorToolStripMenuItem});
+            this.transformadorToolStripMenuItem.Name = "transformadorToolStripMenuItem";
+            this.transformadorToolStripMenuItem.Size = new System.Drawing.Size(97, 20);
+            this.transformadorToolStripMenuItem.Text = "Transformador";
+            // 
+            // calculoDePotenciaToolStripMenuItem
+            // 
+            this.calculoDePotenciaToolStripMenuItem.Name = "calculoDePotenciaToolStripMenuItem";
+            this.calculoDePotenciaToolStripMenuItem.Size = new System.Drawing.Size(293, 22);
+            this.calculoDePotenciaToolStripMenuItem.Text = "Calculo de Potencia";
+            this.calculoDePotenciaToolStripMenuItem.Click += new System.EventHandler(this.calculoDePotenciaToolStripMenuItem_Click);
+            // 
+            // calculoDeBobinaToolStripMenuItem
+            // 
+            this.calculoDeBobinaToolStripMenuItem.Name = "calculoDeBobinaToolStripMenuItem";
+            this.calculoDeBobinaToolStripMenuItem.Size = new System.Drawing.Size(293, 22);
+            this.calculoDeBobinaToolStripMenuItem.Text = "Calculo de Transformador para Inversores";
+            this.calculoDeBobinaToolStripMenuItem.Click += new System.EventHandler(this.calculoDeBobinaToolStripMenuItem_Click);
+            // 
+            // bateriaToolStripMenuItem
+            // 
+            this.bateriaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cargaDeBateriaToolStripMenuItem});
+            this.bateriaToolStripMenuItem.Name = "bateriaToolStripMenuItem";
+            this.bateriaToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.bateriaToolStripMenuItem.Text = "Bateria";
+            // 
+            // cargaDeBateriaToolStripMenuItem
+            // 
+            this.cargaDeBateriaToolStripMenuItem.Name = "cargaDeBateriaToolStripMenuItem";
+            this.cargaDeBateriaToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.cargaDeBateriaToolStripMenuItem.Text = "Carga de Bateria";
+            this.cargaDeBateriaToolStripMenuItem.Click += new System.EventHandler(this.cargaDeBateriaToolStripMenuItem_Click);
+            // 
+            // opcionesToolStripMenuItem
+            // 
+            this.opcionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.salirToolStripMenuItem});
+            this.opcionesToolStripMenuItem.Name = "opcionesToolStripMenuItem";
+            this.opcionesToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
+            this.opcionesToolStripMenuItem.Text = "Opciones";
+            // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
+            this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            // 
+            // calculoDeTransformadorToolStripMenuItem
+            // 
+            this.calculoDeTransformadorToolStripMenuItem.Name = "calculoDeTransformadorToolStripMenuItem";
+            this.calculoDeTransformadorToolStripMenuItem.Size = new System.Drawing.Size(293, 22);
+            this.calculoDeTransformadorToolStripMenuItem.Text = "Calculo de Transformador ";
+            this.calculoDeTransformadorToolStripMenuItem.Click += new System.EventHandler(this.calculoDeTransformadorToolStripMenuItem_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(878, 450);
+            this.Controls.Add(this.menuStrip1);
+            this.IsMdiContainer = true;
+            this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "Form1";
+            this.Text = "Inicio";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem transformadorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem calculoDePotenciaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem opcionesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bateriaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cargaDeBateriaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem calculoDeBobinaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem calculoDeTransformadorToolStripMenuItem;
     }
 }
 
