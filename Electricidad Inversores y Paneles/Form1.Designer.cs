@@ -32,11 +32,14 @@
             this.transformadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calculoDePotenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calculoDeBobinaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.calculoDeTransformadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bateriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cargaDeBateriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.opcionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.calculoDeTransformadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inversorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tiempoDeDuracionDelInversorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tiempoDeCargaDeInversorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,6 +48,7 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.transformadorToolStripMenuItem,
             this.bateriaToolStripMenuItem,
+            this.inversorToolStripMenuItem,
             this.opcionesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -76,6 +80,13 @@
             this.calculoDeBobinaToolStripMenuItem.Text = "Calculo de Transformador para Inversores";
             this.calculoDeBobinaToolStripMenuItem.Click += new System.EventHandler(this.calculoDeBobinaToolStripMenuItem_Click);
             // 
+            // calculoDeTransformadorToolStripMenuItem
+            // 
+            this.calculoDeTransformadorToolStripMenuItem.Name = "calculoDeTransformadorToolStripMenuItem";
+            this.calculoDeTransformadorToolStripMenuItem.Size = new System.Drawing.Size(293, 22);
+            this.calculoDeTransformadorToolStripMenuItem.Text = "Calculo de Transformador ";
+            this.calculoDeTransformadorToolStripMenuItem.Click += new System.EventHandler(this.calculoDeTransformadorToolStripMenuItem_Click);
+            // 
             // bateriaToolStripMenuItem
             // 
             this.bateriaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -87,7 +98,7 @@
             // cargaDeBateriaToolStripMenuItem
             // 
             this.cargaDeBateriaToolStripMenuItem.Name = "cargaDeBateriaToolStripMenuItem";
-            this.cargaDeBateriaToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.cargaDeBateriaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cargaDeBateriaToolStripMenuItem.Text = "Carga de Bateria";
             this.cargaDeBateriaToolStripMenuItem.Click += new System.EventHandler(this.cargaDeBateriaToolStripMenuItem_Click);
             // 
@@ -102,16 +113,31 @@
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
-            // calculoDeTransformadorToolStripMenuItem
+            // inversorToolStripMenuItem
             // 
-            this.calculoDeTransformadorToolStripMenuItem.Name = "calculoDeTransformadorToolStripMenuItem";
-            this.calculoDeTransformadorToolStripMenuItem.Size = new System.Drawing.Size(293, 22);
-            this.calculoDeTransformadorToolStripMenuItem.Text = "Calculo de Transformador ";
-            this.calculoDeTransformadorToolStripMenuItem.Click += new System.EventHandler(this.calculoDeTransformadorToolStripMenuItem_Click);
+            this.inversorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tiempoDeDuracionDelInversorToolStripMenuItem,
+            this.tiempoDeCargaDeInversorToolStripMenuItem});
+            this.inversorToolStripMenuItem.Name = "inversorToolStripMenuItem";
+            this.inversorToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.inversorToolStripMenuItem.Text = "Inversor";
+            // 
+            // tiempoDeDuracionDelInversorToolStripMenuItem
+            // 
+            this.tiempoDeDuracionDelInversorToolStripMenuItem.Name = "tiempoDeDuracionDelInversorToolStripMenuItem";
+            this.tiempoDeDuracionDelInversorToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
+            this.tiempoDeDuracionDelInversorToolStripMenuItem.Text = "Tiempo de duracion del inversor";
+            this.tiempoDeDuracionDelInversorToolStripMenuItem.Click += new System.EventHandler(this.tiempoDeDuracionDelInversorToolStripMenuItem_Click);
+            // 
+            // tiempoDeCargaDeInversorToolStripMenuItem
+            // 
+            this.tiempoDeCargaDeInversorToolStripMenuItem.Name = "tiempoDeCargaDeInversorToolStripMenuItem";
+            this.tiempoDeCargaDeInversorToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
+            this.tiempoDeCargaDeInversorToolStripMenuItem.Text = "Tiempo de carga de inversor";
             // 
             // Form1
             // 
@@ -144,6 +170,9 @@
         private System.Windows.Forms.ToolStripMenuItem cargaDeBateriaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem calculoDeBobinaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem calculoDeTransformadorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem inversorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tiempoDeDuracionDelInversorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tiempoDeCargaDeInversorToolStripMenuItem;
     }
 }
 

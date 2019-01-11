@@ -47,5 +47,12 @@ namespace Electricidad_Inversores_y_Paneles
             frmCalculo_Transformador.ShowDialog();
 
         }
+
+        private void tiempoDeDuracionDelInversorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TiempoDeDuracionInversor tiempoDeDuracionInversor = new TiempoDeDuracionInversor();
+            tiempoDeDuracionInversor.ShowDialog();
+
+        }
     }
 }
